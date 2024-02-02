@@ -6,12 +6,12 @@ namespace Lab3App
 	internal class Diamond : Treasure
 	{
         private string name;
-        private int score;
+        private int Score;
 
         public Diamond(string name, int score)
         {
             this.name = name;
-            this.score = score;
+            this.Score = score;
         }
 
         public override void AddMe(List<Collectable> list)
@@ -28,7 +28,7 @@ namespace Lab3App
 
         public override void UpdateTotalScore()
         {
-            CollectionBoard.TotalScore += score;
+            CollectionBoard.TotalScore += Score;
             Console.WriteLine("Total Score is updated to: " + CollectionBoard.TotalScore);
         }
     }

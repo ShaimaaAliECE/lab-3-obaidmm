@@ -5,10 +5,13 @@ namespace Lab3App
 {
 	abstract internal class Collectable : Displayable
 	{
-		public CollectionBoard Board;
-		public string Description;
-		public abstract void AddMe(List<Collectable> list);
-		public abstract void Display();
-	}
+        public string Description;
+
+        public CollectionBoard Board;
+
+        public abstract void Display();
+
+        public abstract void AddMe(List<Collectable> list);
+    }
 }
 

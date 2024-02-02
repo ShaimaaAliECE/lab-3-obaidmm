@@ -16,11 +16,6 @@ namespace Lab3App
 			this.value = value;
 		}
 
-		public void UpdateTotalValue()
-		{
-            CollectionBoard.TotalValue += value;
-            Console.WriteLine("Total Value is updated to: " + CollectionBoard.TotalValue);
-        }
 
         public override void Display()
         {
@@ -32,7 +27,13 @@ namespace Lab3App
             Console.WriteLine(name + " Collected, Congrats!!!!");
             list.Add(this);
             UpdateTotalScore();
-            
+            UpdateTotalValue();
+        }
+
+        public void UpdateTotalValue()
+        {
+            CollectionBoard.TotalValue += value;
+            Console.WriteLine("Total Value is updated to: " + CollectionBoard.TotalValue);
         }
 
         public override void UpdateTotalScore()
